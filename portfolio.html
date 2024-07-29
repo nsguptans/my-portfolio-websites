@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="main">
+   <header class="header">
+    <a href="#" class="logo">PORT<span>FOLIO</span></a>
+    <nav class="navbar">
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="project1.html">Project</a>
+        <a href="education.html">Education</a>
+    </nav>
+    <a href="contact.html" class="contact">Contact Me</a>
+    <a href="#" class="nav-toggle hover-link">
+        <i class="fa-solid fa-bars" style="color:white;"></i>
+    </a>
+   </header>    
+<section class="home">
+    <div class="home-container">
+        <h3>hi</h3>
+        <h1>I'm <span>Neha<br/> </span>a Fresher</h1>
+        <p>My name is <span>neha gupta.</span> <br/>
+            I am from <span>mandsaur</span>
+            I am corrently pursuing <span>MCA</span> in mandsaur University
+        </p>
+        <div class="btn-box">
+            <a href="file:///C:/Users/Administrator/Downloads/nehuresume.pdf" class="btn-1">Resume</a>
+            <a href="experience.html" class="btn-2">Experience</a>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="nehu.jpeg" alt="no">
+    </div>
+</section>
+<section class="about">
+    <div class="about-img">
+        <img src="nehu.jpeg"alt="">
+        </div>
+        <div class="about-content">
+<h2 class="heading">About<span>Me</span></h2>
+<h3> I am a <span>Fresher</span></h3>
+<p>My name is <span>neha gupta</span> 
+    I am from <span>mandsaur</span><br/>
+    I am corrently pursuing <span>MCA</span> in mandsaur University<br/>
+    I am a hardworker.
+    i complete my graduation in   stream <span>BCA</span>in <span><br/>
+        goverment .p.g college </span>mandsaur</p>
+</p>
+<a href="experience.html" class="btn-2">Experience</a>
+</div>
+</section>
+<section class="contact-form">
+    <h2 class="contact-me">Contact  <span>Me</span></h2>
+ <form action ="#">
+    <div class="input-box">
+        <input type="text"placeholder="Full Name"><br/>
+        <input type="email"placeholder="Email"><br/>
+        <input type="text"placeholder="Phone number"  onkeyup="val(this)"><br/>
+        <div id="res"></div>
+        <input type="text"placeholder="Subject"><br/>
+ </div>
+ <textarea name="" id="" cols="30" rows="10" placeholder=" enter your message"></textarea><br/>
+ <input type="submit"value="Send Message" class="btn-1">
+ </form>
+</section>
+<footer class="footer">
+<div class="social">
+    <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin-square'></i></a>
+    <a href="htttp://github.com /nsguptans"><i class='bx bxl-twitter'></i></a>
+    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+</div>
+<div class="list">
+    <ul>
+    
+    <li>
+        <a href ="portfolio1.html">about me</a>
+    </li>
+    <li>
+        <a href ="#">Contact No:6260455221</a>
+    </li>
+    <li>
+        <a href ="#">Gmail: ng593869@gmail.com</a>
+    </li>
+    <li>
+        <a href ="#">Telegram :9479635422</a>
+    </li>
+   
+   </ul>
+</div>
+</footer>
+</div>
+</body>
+<script type="text/javascript">
+    document.getElementById('res').style.color = "red";
+    function val(elem)
+    {
+      if(isNaN(elem.value))
+      {
+        document.getElementById('res').innerText = "please enter number only";
+      }
+      else{
+        document.getElementById('res').innerText = "";
+        if(elem.value.length > 10){
+            document.getElementById('res').innerText = "please enter only 10 digit";
+
+        }
+        else{
+            document.getElementById('res').innerText = "";
+
+
+        }
+      }
+     }
+
+</script>
+</html>

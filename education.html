@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'popins',sans-serif;
+            text-decoration: none;
+            list-style: none;
+        
+        }
+        .header
+        {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            padding:35px 12%;
+            background:black;
+            backdrop-filter:blur(20px);
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index:100;
+        }
+        .logo
+        {
+            font-size: 25px;
+            color:white;
+            font-weight: 600;
+            transition:0.3s ease;
+        
+        }
+        .logo:hover{
+            color:orangered;
+            text-shadow: 0 0 25px orangered,
+                          0 0 50px orangered;
+            transform: scale(1.1);
+        }
+        span{
+            color:orangered;
+            font-weight: bold;
+        
+        }
+        .navbar a{
+            font-size: 18px;
+            color:white;
+            font-weight: 500;
+            margin:0 20px;
+            border-bottom: 3px solid transparent;
+            transition:0.3s ease;
+        
+        }.navbar a:hover,
+        .navbar a.active{
+            color:orangered;
+            border-bottom: 2px solid orangered;
+        
+        }
+        .contact
+        {
+            padding:10px 28px;
+            background-color:white;
+            color:black;
+            border:2px solid transparent;
+            border-radius: 8px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight:600 ;
+            transition: 0.3s ease;
+        }
+        .contact:hover{
+            background: orangered;
+            box-shadow:0 0 25px orangered;
+            color:white;
+        }
+        .home
+        {
+            width:100%;
+            min-height: 100vh;
+            background: rgb(241,241,241);
+            display:flex;
+            align-items: center;
+            gap:7em;
+            padding:30px 12% 0;
+        }
+        .home-container
+        {
+            max-width: 800px;
+           
+        }
+        .home-container h3{
+            font-size:55px;
+        }
+        .home-container h1{
+            font-size: 40px;
+            line-height: 1.2;
+        }
+        .home-container p{
+            font-size: 20px;
+            margin:25px 0 30px;
+            }
+            .btn-box
+            {
+                width:345px;
+                display:flex;
+                gap:2em;
+            }
+            .btn-1
+            {
+                padding:15px 28px;
+                background-color: black;
+                color:white;
+                border:2px solid transparent;
+                font-size: 18px;
+             letter-spacing: 1px;
+             font-weight: 600;  
+             transition: 0.3s ease;
+             cursor: pointer; 
+            }
+            .btn-1:hover{
+                background-color: white;
+                color:black;
+                border:2px solid black;
+            }
+            .btn-2
+            {
+                padding:15px 20px;
+                background-color: orangered;
+                color:white;
+                border:2px solid black;
+                border-radius: 8px;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                transition:0.3s ease;
+                cursor:pointer;
+            }
+            .btn-2:hover{
+                background-color: white;
+                color:orangered;
+        
+            }
+            .img-box img{
+                border-radius: 50%;
+                width:400px;
+                margin-top:1em;
+            }
+            .btn-box
+{
+    width:345px;
+    display:flex;
+    gap:2em;
+}
+.btn-1
+{
+    padding:15px 28px;
+    background-color: black;
+    color:white;
+    border:2px solid transparent;
+    font-size: 18px;
+ letter-spacing: 1px;
+ font-weight: 600;  
+ transition: 0.3s ease;
+ cursor: pointer; 
+}
+.btn-1:hover{
+    background-color: white;
+    color:black;
+    border:2px solid black;
+}
+.btn-2
+{
+    padding:15px 20px;
+    background-color: orangered;
+    color:white;
+    border:2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color:orangered;
+
+}
+
+        </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>EDUACTION</span></a>
+        <nav class="navbar">
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="project1.html">Project</a>
+            <a href="education.html">Education</a>
+        </nav>
+        <a href="contact.html" class="contact">Contact Me</a>
+    
+        </a>
+       </header>    
+    <section class="home">
+        <div class="home-container">
+
+            <h3>My<span>EDUCATION</span></h3>
+               <p> *I AM Currently  pursuing<span>M.C.A</span>in mandsaur university
+                *I Complete my graduation in stream<span>B.C.A</span> in 79%<br/>
+                *I complete<span>12th </span> standard in 68%<br/>
+                I have completed<span>10th</span> standard in 78%<br/>
+
+
+            </p>
+            <div class="btn-box">
+                <a href="file:///C:/Users/Administrator/Downloads/nehuresume.pdf" class="btn-1">Resume</a>
+                <a href="experience.html" class="btn-2">Experience</a>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="nehu.jpeg" alt="no">
+        </div>
+    </section>
+    
+</body>
+</html>
